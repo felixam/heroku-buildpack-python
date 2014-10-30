@@ -1,0 +1,15 @@
+export WEBP_VERSION=0.4.0
+cd /tmp
+# Download webp dependency
+curl https://webp.googlecode.com/files/libwebp-$WEBP_VERSION.tar.gz -o
+# libwebp.tar.gz
+# Unzip
+tar -xvf libwebp.tar.gz
+# Get into webp folder
+cd libwebp-$WEBP_VERSION
+# Configure build
+./configure
+# Make libwebp
+make
+# Install webp
+make install

@@ -185,6 +185,9 @@ set-default-env LANG en_US.UTF-8
 set-default-env PYTHONHASHSEED random
 set-default-env PYTHONPATH /app/
 
+#install libwebp
+source $BIN_DIR/libwebp
+
 
 # Experimental post_compile hook.
 bpwatch start post_compile
